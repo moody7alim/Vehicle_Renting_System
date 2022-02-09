@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="Driver" package="" visibility="public" xPosition="698.0" yPosition="601.0">
+      <Fields>
+        <Field name="Photo" type="String" visibility="private"/>
+        <Field name="Experience" type="String" visibility="private"/>
+        <Field name="DateOfBirth" type="String" visibility="private"/>
+        <Field name="DriverCar" type="Vehicle" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Photo"/>
+          <Argument type="String" name="Experience"/>
+          <Argument type="String" name="DateOfBirth"/>
+          <Argument type="Vehicle" name="DriverCar"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="AddDriver" returnType="void" visibility="public"/>
+        <Method name="ViewDriver" returnType="void" visibility="public"/>
+        <Method name="UpdateDriver" returnType="Void" visibility="public"/>
+        <Method name="SearchDriver" returnType="void" visibility="public"/>
+        <Method name="DeleteDriver" returnType="void" visibility="public"/>
+        <Method name="getPhoto" returnType="String" visibility="public"/>
+        <Method name="setPhoto" returnType="String" visibility="public">
+          <Argument type="String" name="Photo"/>
+        </Method>
+        <Method name="getExperience" returnType="String" visibility="public"/>
+        <Method name="setExperience" returnType="String" visibility="public">
+          <Argument type="String" name="Experience"/>
+        </Method>
+        <Method name="getDateOfBirth" returnType="String" visibility="public"/>
+        <Method name="setDateOfBirth" returnType="String" visibility="public">
+          <Argument type="String" name="DateOfBirth"/>
+        </Method>
+        <Method name="getDriverCar" returnType="Vehicle" visibility="public"/>
+        <Method name="setDriverCar" returnType="Vehicle" visibility="public">
+          <Argument type="Vehicle" name="DriverCar"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Admin" package="" visibility="public" xPosition="10.0" yPosition="1026.0">
+      <Fields>
+        <Field name="UserName" type="string" visibility="private"/>
+        <Field name="Password" type="string" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="string" name="UserName"/>
+          <Argument type="string" name="Password"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getUserName" returnType="string" visibility="public"/>
+        <Method name="setUserName" returnType="string" visibility="public">
+          <Argument type="string" name="UserName"/>
+        </Method>
+        <Method name="getPassword" returnType="string" visibility="public"/>
+        <Method name="setPassword" returnType="string" visibility="public">
+          <Argument type="string" name="Password"/>
+        </Method>
+        <Method name="AddEmployee" returnType="boolean" visibility="public"/>
+        <Method name="ListEmployee" returnType="void" visibility="public"/>
+        <Method name="UpdateEmplyee" returnType="boolean" visibility="public"/>
+        <Method name="DeleteEmplyee" returnType="boolean" visibility="public"/>
+        <Method name="SearchEmployee" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Company" package="" visibility="public" xPosition="559.0" yPosition="33.0">
+      <Fields>
+        <Field name="Brand" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Brand"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="AddCompany" returnType="boolean" visibility="public"/>
+        <Method name="SearchCompany" returnType="boolean" visibility="public"/>
+        <Method name="DeleteCompany" returnType="boolean" visibility="public"/>
+        <Method name="UpdateCompany" returnType="boolean" visibility="public"/>
+        <Method name="getBrand" returnType="String" visibility="public"/>
+        <Method name="setBrand" returnType="String" visibility="public">
+          <Argument type="String" name="Brand"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Employee" package="" visibility="public" xPosition="1272.0" yPosition="1300.0">
+      <Fields>
+        <Field name="DateOfJoin" type="String" visibility="private"/>
+        <Field name="Qualification" type="String" visibility="private"/>
+        <Field name="DateOfBirth" type="String" visibility="private"/>
+        <Field name="UserName" type="string" visibility="private"/>
+        <Field name="Password" type="string" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="DateOfJoin"/>
+          <Argument type="String" name="Qualification"/>
+          <Argument type="String" name="DateOfBirth"/>
+          <Argument type="string" name="UserName"/>
+          <Argument type="string" name="Password"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDateOfJoin" returnType="String" visibility="public"/>
+        <Method name="setDateOfJoin" returnType="String" visibility="public">
+          <Argument type="String" name="DateOfJoin"/>
+        </Method>
+        <Method name="getQualification" returnType="String" visibility="public"/>
+        <Method name="setQualification" returnType="String" visibility="public">
+          <Argument type="String" name="Qualification"/>
+        </Method>
+        <Method name="getDateOfBirth" returnType="String" visibility="public"/>
+        <Method name="setDateOfBirth" returnType="String" visibility="public">
+          <Argument type="String" name="DateOfBirth"/>
+        </Method>
+        <Method name="getUserName" returnType="string" visibility="public"/>
+        <Method name="setUserName" returnType="string" visibility="public">
+          <Argument type="string" name="UserName"/>
+        </Method>
+        <Method name="getPassword" returnType="string" visibility="public"/>
+        <Method name="setPassword" returnType="string" visibility="public">
+          <Argument type="string" name="Password"/>
+        </Method>
+        <Method name="AddCustomer" returnType="boolean" visibility="public"/>
+        <Method name="DeleteCustomer" returnType="boolean" visibility="public"/>
+        <Method name="UpdateCustomer" returnType="boolean" visibility="public"/>
+        <Method name="SearchCustomer" returnType="boolean" visibility="public"/>
+        <Method name="ViewCars" returnType="void" visibility="public"/>
+        <Method name="ReturnCar" returnType="Object" visibility="public"/>
+        <Method name="AddDriver" returnType="void" visibility="public"/>
+        <Method name="DeleteDriver" returnType="void" visibility="public"/>
+        <Method name="UpdateDriver" returnType="void" visibility="public"/>
+        <Method name="AddEmployee" returnType="void" visibility="public"/>
+        <Method name="DeleteEmployee" returnType="void" visibility="public"/>
+        <Method name="UpdateEmployee" returnType="void" visibility="public"/>
+        <Method name="SearchEmployee" returnType="void" visibility="public"/>
+        <Method name="ListEmployee" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Customer" package="" visibility="public" xPosition="1597.0" yPosition="642.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="NumbersOfRentingDays" type="int" visibility="private"/>
+        <Field name="BookDate" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="ID"/>
+          <Argument type="int" name="NumbersOfRentingDays"/>
+          <Argument type="Date" name="BookDate"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="AddCustomer" returnType="boolean" visibility="public"/>
+        <Method name="SearchCustomer" returnType="boolean" visibility="public"/>
+        <Method name="UpdateCustomer" returnType="boolean" visibility="public"/>
+        <Method name="DeleteCustomer" returnType="boolean" visibility="public"/>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="int" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="getNumbersOfRentingDays" returnType="int" visibility="public"/>
+        <Method name="setNumbersOfRentingDays" returnType="int" visibility="public">
+          <Argument type="int" name="NumbersOfRentingDays"/>
+        </Method>
+        <Method name="getBookDate" returnType="Date" visibility="public"/>
+        <Method name="setBookDate" returnType="Date" visibility="public">
+          <Argument type="Date" name="BookDate"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FileManger" package="myproject" visibility="public" xPosition="2044.0" yPosition="331.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="write" returnType="Object" visibility="public">
+          <Argument type="String" name="FilePath"/>
+          <Argument type="Object" name="data"/>
+        </Method>
+        <Method name="read" returnType="String" visibility="public">
+          <Argument type="String" name="FilePath"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MyException" package="myproject" visibility="public" xPosition="1995.0" yPosition="12.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="s"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="checkPositive" returnType="String" visibility="public">
+          <Argument type="String" name="x"/>
+        </Method>
+        <Method name="checkEmail" returnType="String" visibility="public">
+          <Argument type="String" name="x"/>
+          <Argument type="String" name="p"/>
+        </Method>
+        <Method name="checkPassLength" returnType="String" visibility="public">
+          <Argument type="String" name="x"/>
+          <Argument type="String" name="p"/>
+        </Method>
+        <Method name="ISnumeric" returnType="String" visibility="public">
+          <Argument type="String" name="p"/>
+          <Argument type="String" name="x"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Person" package="" visibility="public" xPosition="965.0" yPosition="12.0">
+      <Fields>
+        <Field name="Name" type="String" visibility="private"/>
+        <Field name="Gender" type="String" visibility="private"/>
+        <Field name="Address" type="String" visibility="private"/>
+        <Field name="PhoneNumber" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Name"/>
+          <Argument type="String" name="Gender"/>
+          <Argument type="String" name="Address"/>
+          <Argument type="String" name="PhoneNumber"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="String" visibility="public">
+          <Argument type="String" name="Name"/>
+        </Method>
+        <Method name="getGender" returnType="String" visibility="public"/>
+        <Method name="setGender" returnType="String" visibility="public">
+          <Argument type="String" name="Gender"/>
+        </Method>
+        <Method name="getAddress" returnType="String" visibility="public"/>
+        <Method name="setAddress" returnType="String" visibility="public">
+          <Argument type="String" name="Address"/>
+        </Method>
+        <Method name="getPhoneNumber" returnType="String" visibility="public"/>
+        <Method name="setPhoneNumber" returnType="String" visibility="public">
+          <Argument type="String" name="PhoneNumber"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ticket" package="myproject" visibility="public" xPosition="664.0" yPosition="1120.0">
+      <Fields>
+        <Field name="today" type="Date" visibility="private"/>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="car" type="Vehicle" visibility="private"/>
+        <Field name="customer" type="Customer" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Date" name="today"/>
+          <Argument type="int" name="ID"/>
+          <Argument type="Vehicle" name="car"/>
+          <Argument type="Customer" name="customer"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getToday" returnType="Date" visibility="public"/>
+        <Method name="setToday" returnType="Date" visibility="public">
+          <Argument type="Date" name="today"/>
+        </Method>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="int" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="getCar" returnType="Vehicle" visibility="public"/>
+        <Method name="setCar" returnType="Vehicle" visibility="public">
+          <Argument type="Vehicle" name="car"/>
+        </Method>
+        <Method name="getCustomer" returnType="Customer" visibility="public"/>
+        <Method name="setCustomer" returnType="Customer" visibility="public">
+          <Argument type="Customer" name="customer"/>
+        </Method>
+        <Method name="TotalPrice" returnType="Driver" visibility="public">
+          <Argument type="Vehicle" name="car"/>
+          <Argument type="Customer" name="c"/>
+          <Argument type="Driver" name="d"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Vehicle" package="" visibility="public" xPosition="47.0" yPosition="13.0">
+      <Fields>
+        <Field name="CarModel" type="String" visibility="private"/>
+        <Field name="Brand" type="Company" visibility="private"/>
+        <Field name="Number" type="int" visibility="private"/>
+        <Field name="ProductionYear" type="String" visibility="private"/>
+        <Field name="UseAs" type="String" visibility="private"/>
+        <Field name="SeatCapacity" type="int" visibility="private"/>
+        <Field name="EngineCapacity" type="int" visibility="private"/>
+        <Field name="Type" type="String" visibility="private"/>
+        <Field name="Varient" type="String" visibility="private"/>
+        <Field name="RentValue" type="double" visibility="private"/>
+        <Field name="Status" type="String" visibility="private"/>
+        <Field name="NumberOfRentingTimes" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="CarModel"/>
+          <Argument type="Company" name="Brand"/>
+          <Argument type="int" name="Number"/>
+          <Argument type="String" name="ProductionYear"/>
+          <Argument type="String" name="UseAs"/>
+          <Argument type="int" name="SeatCapacity"/>
+          <Argument type="int" name="EngineCapacity"/>
+          <Argument type="String" name="Type"/>
+          <Argument type="String" name="Varient"/>
+          <Argument type="double" name="RentValue"/>
+          <Argument type="String" name="Status"/>
+          <Argument type="int" name="NumberOfRentingTimes"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCarModel" returnType="String" visibility="public"/>
+        <Method name="setCarModel" returnType="String" visibility="public">
+          <Argument type="String" name="CarModel"/>
+        </Method>
+        <Method name="getBrand" returnType="Company" visibility="public"/>
+        <Method name="setBrand" returnType="Company" visibility="public">
+          <Argument type="Company" name="Brand"/>
+        </Method>
+        <Method name="getNumber" returnType="int" visibility="public"/>
+        <Method name="setNumber" returnType="int" visibility="public">
+          <Argument type="int" name="Number"/>
+        </Method>
+        <Method name="getProductionYear" returnType="String" visibility="public"/>
+        <Method name="setProductionYear" returnType="String" visibility="public">
+          <Argument type="String" name="ProductionYear"/>
+        </Method>
+        <Method name="getUseAs" returnType="String" visibility="public"/>
+        <Method name="setUseAs" returnType="String" visibility="public">
+          <Argument type="String" name="UseAs"/>
+        </Method>
+        <Method name="getSeatCapacity" returnType="int" visibility="public"/>
+        <Method name="setSeatCapacity" returnType="int" visibility="public">
+          <Argument type="int" name="SeatCapacity"/>
+        </Method>
+        <Method name="getEngineCapacity" returnType="int" visibility="public"/>
+        <Method name="setEngineCapacity" returnType="int" visibility="public">
+          <Argument type="int" name="EngineCapacity"/>
+        </Method>
+        <Method name="getType" returnType="String" visibility="public"/>
+        <Method name="setType" returnType="String" visibility="public">
+          <Argument type="String" name="Type"/>
+        </Method>
+        <Method name="getVarient" returnType="String" visibility="public"/>
+        <Method name="setVarient" returnType="String" visibility="public">
+          <Argument type="String" name="Varient"/>
+        </Method>
+        <Method name="getRentValue" returnType="double" visibility="public"/>
+        <Method name="setRentValue" returnType="double" visibility="public">
+          <Argument type="double" name="RentValue"/>
+        </Method>
+        <Method name="getStatus" returnType="String" visibility="public"/>
+        <Method name="setStatus" returnType="String" visibility="public">
+          <Argument type="String" name="Status"/>
+        </Method>
+        <Method name="getNumberOfRentingTimes" returnType="int" visibility="public"/>
+        <Method name="setNumberOfRentingTimes" returnType="int" visibility="public">
+          <Argument type="int" name="NumberOfRentingTimes"/>
+        </Method>
+        <Method name="viewVehicle" returnType="void" visibility="public"/>
+        <Method name="AddVehicle" returnType="void" visibility="public"/>
+        <Method name="DeleteVehicle" returnType="void" visibility="public"/>
+        <Method name="SearchVehicle" returnType="void" visibility="public"/>
+        <Method name="UpdateVehicle" returnType="void" visibility="public"/>
+        <Method name="ListAll" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Email" package="" visibility="public" xPosition="2121.0" yPosition="1215.0">
+      <Fields>
+        <Field name="ToEmail" type="String" visibility="private"/>
+        <Field name="Cc" type="String" visibility="private"/>
+        <Field name="Subject" type="String" visibility="private"/>
+        <Field name="EmailBody" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="generateAndSendEmail" returnType="void" visibility="public"/>
+        <Method name="loadFromFile" returnType="void" visibility="public"/>
+        <Method name="SetToEmail" returnType="void" visibility="public"/>
+        <Method name="commitToFile" returnType="boolean" visibility="public"/>
+        <Method name="getCc" returnType="String" visibility="public"/>
+        <Method name="getToEmail" returnType="String" visibility="public"/>
+        <Method name="getEmailBody" returnType="String" visibility="public"/>
+        <Method name="getSubject" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="StaffFunctions" package="" visibility="public" xPosition="494.0" yPosition="1642.0">
+      <Methods>
+        <Method name="AddVehicle" returnType="boolean" visibility="public"/>
+        <Method name="SearchVehicle" returnType="boolean" visibility="public"/>
+        <Method name="UpdateVehicle" returnType="boolean" visibility="public"/>
+        <Method name="DeleteVehicle" returnType="boolean" visibility="public"/>
+        <Method name="ViewVehicle" returnType="void" visibility="public"/>
+        <Method name="ViewDriver" returnType="void" visibility="public"/>
+        <Method name="login" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="ok" source="Vehicle" target="myproject.MyException" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Admin" target="StaffFunctions"/>
+    <IsRelation name="is" source="Customer" target="Person"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Employee" target="StaffFunctions"/>
+    <HasRelation name="dsa" source="myproject.Ticket" target="Driver" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="FM" source="Customer" target="myproject.FileManger" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="DriverCar" source="Driver" target="Vehicle" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Employee" target="Person"/>
+    <HasRelation name="Brand" source="Vehicle" target="Company" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Driver" target="Person"/>
+    <HasRelation name="car" source="myproject.Ticket" target="Vehicle" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="myproject.Ticket" target="Customer" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="FM" source="Company" target="myproject.FileManger" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="FM" source="Vehicle" target="myproject.FileManger" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="ko" source="Person" target="myproject.MyException" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Filem" source="Person" target="myproject.FileManger" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="customer" source="myproject.Ticket" target="Customer" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="us" source="Employee" target="Email" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Email" source="Email" target="myproject.FileManger" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation source="Driver" target="Vehicle" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
